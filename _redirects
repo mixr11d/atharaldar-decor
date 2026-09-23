@@ -1,0 +1,3 @@
+# Cloudflare Pages Clean Redirects
+# تم إلغاء القواعد الدائرية لمنع خطأ ERR_TOO_MANY_REDIRECTS نهائياً
+# يعتمد النظام التوجيه النظيف التلقائي و404.html الافتراضي
