@@ -13,6 +13,20 @@
 
   <link rel="stylesheet" href="/style.css?v=2.0">
 
+  <!-- تنسيق إضافي لضبط عرض الخدمات 2 في كل صف جنب بعض -->
+  <style>
+    .services-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+    @media (min-width: 768px) {
+      .services-grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+
   <!-- Schema.org JSON-LD للأنشطة المحلية -->
   <script type="application/ld+json">
   {
@@ -185,12 +199,16 @@
                   <option value="">اختر الخدمة...</option>
                   <option value="دهانات داخلية وتأسيس معجون">دهانات داخلية وتأسيس معجون</option>
                   <option value="دهانات خارجية وبروفايل ورشة">دهانات خارجية وبروفايل ورشة</option>
-                  <option value="تركيب بديل الرخام وبديل الخشب">تركيب بديل الرخام وبديل الخشب</option>
-                  <option value="تركيب ديكور بديل الشيبورد">تركيب ديكور بديل الشيبورد</option>
-                  <option value="تركيب باركيه أرضيات وSPC">تركيب باركيه أرضيات وSPC</option>
-                  <option value="تركيب فوم وبانوهات جدارية">تركيب فوم وبانوهات جدارية</option>
-                  <option value="تركيب جبس بورد وقواطع">تركيب جبس بورد وقواطع</option>
                   <option value="ترميم وتشطيب فلل وشقق كاملة">ترميم وتشطيب فلل وشقق كاملة</option>
+                  <option value="تركيب جبس بورد وقواطع وأسقف">تركيب جبس بورد وقواطع وأسقف</option>
+                  <option value="تركيب قواطع بارتيشن خشبية">تركيب قواطع بارتيشن خشبية</option>
+                  <option value="تركيب فوم وبانوهات جدارية">تركيب فوم وبانوهات جدارية</option>
+                  <option value="تركيب تكسيات وبديل الخشب">تركيب تكسيات وبديل الخشب</option>
+                  <option value="تركيب ديكور بديل الرخام">تركيب ديكور بديل الرخام</option>
+                  <option value="تركيب ديكور بديل الشيبورد">تركيب ديكور بديل الشيبورد</option>
+                  <option value="تركيب ورق جدران ولنن">تركيب ورق جدران ولنن</option>
+                  <option value="تركيب باركيه أرضيات وSPC">تركيب باركيه أرضيات وSPC</option>
+                  <option value="ديكورات شاشات ومجالس وغرف">ديكورات شاشات ومجالس وغرف</option>
                 </select>
               </div>
               <div class="form-group">
@@ -234,23 +252,23 @@
       </div>
     </section>
 
-    <!-- شبكة الخدمات الرئيسية -->
+    <!-- شبكة الخدمات الـ 12 كاملة (كل خدمتين في صف واحد جنب بعض 2 Columns) -->
     <section class="section section-dark">
       <div class="container">
         <div class="section-title-wrap">
           <span class="section-subtitle">خدماتنا الشاملة والمتكاملة</span>
-          <h2 class="section-title">حلول الديكور والتشطيب الداخلي والخارجي</h2>
+          <h2 class="section-title">كافة حلول الديكور والتشطيب الداخلي والخارجي (12 خدمة كاملة)</h2>
         </div>
 
-        <div class="grid-3">
+        <div class="services-grid-2">
           <!-- 1. دهانات داخلية -->
           <article class="service-card">
             <div class="service-card-img">
               <img src="/images/interior-paint (1)_result_result.webp" alt="تنفيذ دهانات داخلية بالرياض" loading="lazy" width="400" height="250">
             </div>
             <div class="service-card-body">
-              <h3 class="service-card-title">تنفيذ الدهانات الداخلية</h3>
-              <p class="service-card-text">دهانات سادة، ليدور، ورود، خيال، وتأسيس معجون وصنفرة آلية بدون غبار بأرقى درجات الألوان الحديثة.</p>
+              <h3 class="service-card-title">1. تنفيذ الدهانات الداخلية وتأسيس المعجون</h3>
+              <p class="service-card-text">تنفيذ دهانات جوتن والجزيرة بكافة أنواعها، سحب معجون وصنفرة آلية بدون غبار، ومعالجة التشققات والرطوبة بأحدث التقنيات وبضمان عمل متقن.</p>
               <div class="service-card-footer">
                 <a href="/interior-painting.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
               </div>
@@ -263,66 +281,150 @@
               <img src="/images/Exterior-Painting(1)_result_result_result.webp" alt="دهانات بروفايل ورشة خارجية" loading="lazy" width="400" height="250">
             </div>
             <div class="service-card-body">
-              <h3 class="service-card-title">الدهانات الخارجية والبروفايل</h3>
-              <p class="service-card-text">تنفيذ بروفايل خارجي، رشة أمريكية، دهانات عازلة ومقاومة لشمس وحرارة الرياض العالية بضمان 10 سنوات.</p>
+              <h3 class="service-card-title">2. الدهانات الخارجية والبروفايل والرشة الأمريكية</h3>
+              <p class="service-card-text">تنفيذ بروفايل خارجي، رشة أمريكية، دهانات واجهات مقاومة للعوامل الجوية وحرارة الشمس العالية في الرياض بضمان 10 سنوات على ثبات الألوان.</p>
               <div class="service-card-footer">
                 <a href="/exterior-painting.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
               </div>
             </div>
           </article>
 
-          <!-- 3. بديل الرخام -->
+          <!-- 3. ترميم وتشطيب -->
           <article class="service-card">
             <div class="service-card-img">
-              <img src="/images/marble-alternative-1_result_result.webp" alt="تركيب بديل الرخام بالرياض" loading="lazy" width="400" height="250">
+              <img src="/images/renovation-finishing-1_result.webp" alt="ترميم وتشطيب فلل وشقق بالرياض" loading="lazy" width="400" height="250">
             </div>
             <div class="service-card-body">
-              <h3 class="service-card-title">تركيب ديكور بديل الرخام</h3>
-              <p class="service-card-text">ألواح بديل الرخام المضيء والعادي للمداخل وخلفيات التلفزيون والمجالس والصالات بأشكال عصرية جذابة.</p>
+              <h3 class="service-card-title">3. ترميم وتشطيب فلل وشقق وقصور ومباني</h3>
+              <p class="service-card-text">تجديد شامل للفلل والمنازل القديمة، تجديد دورات المياه والمطابخ، معالجة التصدعات الإنشائية، والتشطيب المتكامل وتسليم مفتاح للأفراد والشركات.</p>
               <div class="service-card-footer">
-                <a href="/marble-alternative-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
+                <a href="/renovation-finishing.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
               </div>
             </div>
           </article>
 
-          <!-- 4. بديل الخشب والتكسيات -->
+          <!-- 4. جبس بورد -->
           <article class="service-card">
             <div class="service-card-img">
-              <img src="/images/wood-alternative-2_result_result.webp" alt="تركيب بديل الخشب للجدران" loading="lazy" width="400" height="250">
+              <img src="/images/gypsum-3_result_result.webp" alt="تركيب جبس بورد وأسقف معلقة" loading="lazy" width="400" height="250">
             </div>
             <div class="service-card-body">
-              <h3 class="service-card-title">بديل الخشب والتكسيات</h3>
-              <p class="service-card-text">تكسيات جدارية داخلية وخارجية بألوان خشبية فاخرة تمنح المكان فخامة استثنائية وعزل إضافي للصوت.</p>
+              <h3 class="service-card-title">4. تركيب جبس بورد قواطع وأسقف وجدران</h3>
+              <p class="service-card-text">أسقف مودرن فلات وإضاءة مخفية وماجنتيك تراك، قواطع جدارية عازلة للصوت، وألواح مقاومة للرطوبة والحريق بفريق مختص ومحترف بالرياض.</p>
+              <div class="service-card-footer">
+                <a href="/gypsum-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. قواطع بارتيشن -->
+          <article class="service-card">
+            <div class="service-card-img">
+              <img src="/images/partition-installation (1)_result.webp" alt="تركيب قواطع بارتيشن خشبية بالرياض" loading="lazy" width="400" height="250">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">5. تفصيل وتركيب قواطع بارتيشن خشبية</h3>
+              <p class="service-card-text">قواطع خشبية وبارتيشن شرائح بديل الخشب وCNC لفصل المداخل والصالات والمجالس بأشكال عصرية توفر الخصوصية الجمالية وبأسعار منافسة.</p>
+              <div class="service-card-footer">
+                <a href="/partition-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. براويز فوم -->
+          <article class="service-card">
+            <div class="service-card-img">
+              <img src="/images/foam-frames (1)_result.webp" alt="تركيب براويز فوم وبانوهات جدارية" loading="lazy" width="400" height="250">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">6. تركيب براويز فوم وبانوهات جدارية</h3>
+              <p class="service-card-text">تركيب إطارات الفوم الكوري بديل الجبس عالي الكثافة، نعلات وبانوهات كلاسيكية ومودرن بزوايا 45 مقصوصة بالليزر بدون فواصل وبسعر مخفض.</p>
+              <div class="service-card-footer">
+                <a href="/foam-frames-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. بديل الخشب -->
+          <article class="service-card">
+            <div class="service-card-img">
+              <img src="/images/wood-alternative-2_result_result.webp" alt="تركيب بديل الخشب والتكسيات" loading="lazy" width="400" height="250">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">7. تركيب ديكور التكسيات وبديل الخشب (WPC)</h3>
+              <p class="service-card-text">تكسيات جدارية داخلية وخارجية مضلعة وسادة للمداخل وخلفيات الشاشات وغرف النوم، مقاومة للماء والحرارة وعازلة للصوت بتصاميم استثنائية.</p>
               <div class="service-card-footer">
                 <a href="/wood-alternative-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
               </div>
             </div>
           </article>
 
-          <!-- 5. بديل الشيبورد -->
+          <!-- 8. بديل الرخام -->
+          <article class="service-card">
+            <div class="service-card-img">
+              <img src="/images/marble-alternative-1_result_result.webp" alt="تركيب ديكور بديل الرخام بالرياض" loading="lazy" width="400" height="250">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">8. تركيب ديكور بديل الرخام المضيء والعادي</h3>
+              <p class="service-card-text">ألواح بديل الرخام 3 ملم بطبقة UV فائقة اللمعان ومقاومة للخدش والحرارة للمداخل والمغاسل وخلفيات التلفزيون بعروق إيطالية وإسبانية فاخرة.</p>
+              <div class="service-card-footer">
+                <a href="/marble-alternative-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. بديل الشيبورد -->
           <article class="service-card">
             <div class="service-card-img">
               <img src="/images/chipboard-installation-12_result.webp" alt="تركيب بديل الشيبورد بالرياض" loading="lazy" width="400" height="250">
             </div>
             <div class="service-card-body">
-              <h3 class="service-card-title">تركيب بديل الشيبورد</h3>
-              <p class="service-card-text">أحدث صيحات ديكورات الشيبورد للخزائن والجدران والشاشات والمجالس بمقاومة عالية ضد الرطوبة والحرارة.</p>
+              <h3 class="service-card-title">9. تركيب ديكور بديل الشيبورد للجدران والشاشات</h3>
+              <p class="service-card-text">أحدث صيحات خشب الشيبورد المقاوم للرطوبة لخزائن الملابس، خلفيات الشاشات المودرن، والمجالس والصالات مع دمج الإضاءة والرفوف المعلقة.</p>
               <div class="service-card-footer">
                 <a href="/chipboard-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
               </div>
             </div>
           </article>
 
-          <!-- 6. أرضيات الباركيه -->
+          <!-- 10. ورق جدران -->
           <article class="service-card">
             <div class="service-card-img">
-              <img src="/images/spc-parquet-1_result_result.webp" alt="تركيب أرضيات باركيه بالرياض" loading="lazy" width="400" height="250">
+              <img src="/images/wallpaper-installation-1_result_result.webp" alt="تركيب ورق جدران كوري ولنن بالرياض" loading="lazy" width="400" height="250">
             </div>
             <div class="service-card-body">
-              <h3 class="service-card-title">تركيب الباركيه و SPC ضد الماء</h3>
-              <p class="service-card-text">باركيه هرمي، ألماني، وأرضيات SPC العازلة للماء مع عازل الفوم السفلي لراحة تامة وعمر افتراضي طويل.</p>
+              <h3 class="service-card-title">10. تركيب ورق جدران كوري ولنن وطباعة 3D</h3>
+              <p class="service-card-text">رولات ورق حائط كوري فندقي قابل للغسل، ورق لنن خيش هادئ لغرف النوم والمجالس، وطباعة تفصيل ورق جدران ثلاثي الأبعاد حسب المقاس بدون فواصل.</p>
+              <div class="service-card-footer">
+                <a href="/wallpaper-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. باركيه و SPC -->
+          <article class="service-card">
+            <div class="service-card-img">
+              <img src="/images/spc-parquet-1_result_result.webp" alt="تركيب باركيه SPC ضد الماء بالرياض" loading="lazy" width="400" height="250">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">11. تركيب باركيه أرضيات خشبية و SPC ضد الماء</h3>
+              <p class="service-card-text">أرضيات SPC المقاومة للماء 100%، باركيه هرمي ألماني وصيني نخب أول، مع تركيب فوم عازل للصوت مانع للصرير وضمان معتمد يصل إلى 10 سنوات.</p>
               <div class="service-card-footer">
                 <a href="/parquet-installation.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. ديكورات شاشات وغرف ومجالس -->
+          <article class="service-card">
+            <div class="service-card-img">
+              <img src="/images/bedroom-tv-majlis-decor-1_result.webp" alt="ديكورات شاشات ومجالس وغرف نوم" loading="lazy" width="400" height="250">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">12. تنفيذ ديكورات غرف نوم وشاشات ومجالس ومداخل</h3>
+              <p class="service-card-text">دمج هندسي مبتكر يجمع بين بديل الرخام، بديل الخشب، بديل الشيبورد، والليد بروفايل لخلفيات التلفاز وغرف النوم الماستر والمجالس بأي تصميم تفصيلي.</p>
+              <div class="service-card-footer">
+                <a href="/bedroom-tv-majlis-decor.html" class="read-more-link">تفاصيل الخدمة والأسعار ←</a>
               </div>
             </div>
           </article>
